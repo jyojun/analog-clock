@@ -8,13 +8,7 @@ export default function ClockFace() {
   return (
     <ClockFaceWrapper>
       {pinFixture.map((idx) => {
-        return (
-          <ClockPin
-            key={idx}
-            rotate={`rotate(${idx * 6}deg)`}
-            long={idx % 5 === 0}
-          />
-        );
+        return <ClockPin key={idx} degree={idx * 6} long={idx % 5 === 0} />;
       })}
       <CenterCircle />
     </ClockFaceWrapper>

@@ -5,13 +5,13 @@ const ClockWrapper = styled.div`
   max-width: 780px;
   width: 100%;
   margin: 50px auto;
+  border-radius: 50%;
 `;
 
 const ClockHand = styled.div`
   position: absolute;
   background: black;
 
-  left: calc(50% - 3px);
   bottom: calc(50% - 2px);
   border-radius: 5px;
 
@@ -19,13 +19,14 @@ const ClockHand = styled.div`
   &.hour_hand {
     height: 30%;
     width: 10px;
+    left: calc(50% - 5px);
   }
 
   &.minute_hand {
     height: 40%;
     width: 7px;
     background: blue;
-    left: calc(50% - 1px);
+    left: calc(50% - 5px);
   }
 
   &.second_hand {

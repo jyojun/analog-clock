@@ -3,19 +3,19 @@ import { createSlice } from "@reduxjs/toolkit";
 const timerSlice = createSlice({
   name: "timerSlice",
   initialState: {
-    hours: new Date().getHours(),
-    minutes: new Date().getMinutes(),
-    seconds: new Date().getSeconds(),
+    date: {
+      hours: new Date().getHours(),
+      minutes: new Date().getMinutes(),
+      seconds: new Date().getSeconds(),
+    },
   },
   reducers: {
-    updateHours: (state, action) => {
-      state.hours = action.payload;
-    },
-    updateMinutes: (state, action) => {
-      state.minutes = action.payload;
-    },
-    updateSeconds: (state, action) => {
-      state.seconds = action.payload;
+    update: (state, action) => {
+      state.date = {
+        hours: action.payload.hours,
+        minutes: action.payload.minutes,
+        seconds: action.payload.seconds,
+      };
     },
   },
 });

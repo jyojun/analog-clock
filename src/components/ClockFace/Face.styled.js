@@ -3,9 +3,9 @@ import styled from "styled-components";
 const ClockFaceWrapper = styled.div`
   width: 100%;
   padding-top: calc(100% - 6px);
-  border: 3px solid black;
   border-radius: 50%;
   position: relative;
+  box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.3);
 `;
 
 const CenterCircle = styled.div`
@@ -13,8 +13,8 @@ const CenterCircle = styled.div`
   height: 20px;
   position: absolute;
   top: calc(50% - 10px);
-  left: calc(50% - 10px);
-  background-color: black;
+  left: calc(50% - 8px);
+  background-color: #333333;
   border-radius: 50%;
   z-index: 1;
 `;
