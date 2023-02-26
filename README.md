@@ -47,3 +47,7 @@ npm run start
     └── utils
         └── index.js
 ```
+
+
+## 결과
+<img src="https://user-images.githubusercontent.com/64758931/221401679-2f558fe0-96b9-4554-8cd7-a7e70d724688.png" width="500" height="500" />
