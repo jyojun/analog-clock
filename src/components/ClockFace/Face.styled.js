@@ -5,7 +5,6 @@ const ClockFaceWrapper = styled.div`
   padding-top: calc(100% - 6px);
   border-radius: 50%;
   position: relative;
-  box-shadow: 10px 5px 5px 5px rgba(0, 0, 0, 0.3);
 `;
 
 const CenterCircle = styled.div`
@@ -14,7 +13,7 @@ const CenterCircle = styled.div`
   position: absolute;
   top: calc(50% - 10px);
   left: calc(50% - 8px);
-  background-color: #333333;
+  background-color: #383830;
   border-radius: 50%;
   z-index: 1;
 `;
@@ -24,21 +23,22 @@ const Pin = styled.div`
   width: 2px;
   height: 50%;
   top: 0;
-  left: 50%;
+  left: calc(50% - 1px);
   transform-origin: bottom;
 
   &::after {
     content: "";
-    width: 5px;
-    height: 12px;
+    width: 0.2rem;
+    height: 1rem;
     position: absolute;
     transform: translateX(-50%);
-    background-color: #555;
+    background-color: black;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   }
 
   &.long__pin::after {
-    width: 9px;
-    height: 20px;
+    width: 0.4rem;
+    height: 2rem;
   }
 `;
 

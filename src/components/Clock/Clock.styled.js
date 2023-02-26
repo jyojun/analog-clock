@@ -11,10 +11,8 @@ const ClockWrapper = styled.div`
 const ClockHand = styled.div`
   position: absolute;
   background: black;
-
   bottom: calc(50% - 2px);
   border-radius: 5px;
-
   transform-origin: bottom;
   &.hour_hand {
     height: 30%;
@@ -26,7 +24,7 @@ const ClockHand = styled.div`
     height: 40%;
     width: 7px;
     background: blue;
-    left: calc(50% - 5px);
+    left: calc(50% - 1px);
   }
 
   &.second_hand {

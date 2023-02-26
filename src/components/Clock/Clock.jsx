@@ -1,6 +1,4 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
-import timerSlice from "../../store/timer";
 import ClockFace from "../ClockFace/ClockFace";
 import { ClockWrapper, ClockHand } from "./Clock.styled";
 import { useRef } from "react";

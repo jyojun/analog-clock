@@ -2,7 +2,7 @@ import Clock from "./components/Clock/Clock";
 import { useEffect } from "react";
 import timerSlice from "./store/timer";
 import { useDispatch } from "react-redux";
-
+import "./App.css";
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {

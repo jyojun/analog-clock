@@ -1,4 +1,3 @@
-import { useMemo } from "react";
 import { ClockFaceWrapper, CenterCircle } from "./Face.styled";
 import ClockPin from "./ClockPin";
 
